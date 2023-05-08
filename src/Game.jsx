@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Game.css'
 
 const CHOICES = [
   { name: "rock", emoji: "✊" },
@@ -60,7 +61,7 @@ function Game() {
   return (
         <div>
             <h1 style={{ fontSize: 48, marginTop: 0 }}>Rock Paper Scissors</h1>
-            <div>
+            <div className="container">
                 {CHOICES.map((choice) => (
                     <button
                         key={choice.name}
