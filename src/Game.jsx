@@ -82,7 +82,7 @@ function Game() {
                         <span style={emojiStyles}>{codeyChoice.emoji}</span>
                         <p style={nameStyles}>The computer chose {codeyChoice.name}</p>
                     </div>
-                    <h2>{result}</h2>
+                    <h2 style={resultStyle}>{result}</h2>
                     <button onClick={resetGame}>Play again</button>
                 </div>
             )}
