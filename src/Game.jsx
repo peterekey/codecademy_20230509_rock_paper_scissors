@@ -76,11 +76,11 @@ function Game() {
                 <div>
                     <div style={choiceStyles}>
                         <span style={emojiStyles}>{playerChoice.emoji}</span>
-                        <p>You chose {playerChoice.name}</p>
+                        <p style={nameStyles}>You chose {playerChoice.name}</p>
                     </div>
                     <div>
                         <span style={emojiStyles}>{codeyChoice.emoji}</span>
-                        <p>The computer chose {codeyChoice.name}</p>
+                        <p style={nameStyles}>The computer chose {codeyChoice.name}</p>
                     </div>
                     <h2>{result}</h2>
                     <button onClick={resetGame}>Play again</button>
