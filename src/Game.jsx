@@ -9,7 +9,7 @@ const CHOICES = [
 const choiceStyles = {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: 40
+    marginBottom: 40,
 }
 
 const emojiStyles = {
@@ -74,7 +74,7 @@ function Game() {
             
             {playerChoice && codeyChoice && (
                 <div>
-                    <div>
+                    <div style={choiceStyles}>
                         <span>{playerChoice.emoji}</span>
                         <p>You chose {playerChoice.name}</p>
                     </div>
