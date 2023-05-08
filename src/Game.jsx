@@ -59,9 +59,9 @@ function Game() {
   }
 
   return (
-        <div>
+        <div className="container">
             <h1 style={{ fontSize: 48, marginTop: 0 }}>Rock Paper Scissors</h1>
-            <div className="container">
+            <div>
                 {CHOICES.map((choice) => (
                     <button
                         key={choice.name}
