@@ -67,6 +67,7 @@ function Game() {
                         key={choice.name}
                         onClick={() => handlePlayerChoice(choice)}
                         aria-label={choice.name}
+                        className="button"
                     >
                         {choice.emoji}
                     </button>
@@ -84,7 +85,7 @@ function Game() {
                         <p style={nameStyles}>The computer chose {codeyChoice.name}</p>
                     </div>
                     <h2 style={resultStyle}>{result}</h2>
-                    <button onClick={resetGame}>Play again</button>
+                    <button onClick={resetGame} className="button">Play again</button>
                 </div>
             )}
         </div>
